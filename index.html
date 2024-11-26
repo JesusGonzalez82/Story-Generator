@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Generador de Historias</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <label for="nombre"><strong>Cual será el nombre de nuestro valeroso heroe??</strong></label><br>
+        <input type="text" id="nombre" required/><br/><br/>
+
+        <label for="nombre"><strong>De que raza quieres que sea nues protagonista??</strong></label><br>
+        <label for="montaraz"><strong>Montaraz:</strong></label>
+        <input type="radio" name="raza" value="montaraz" id="montaraz"/>
+
+        <label for="hobbit"><strong>Hobbit:</strong></label>
+        <input type="radio" name="raza" value="hobbit" id="hobbit"/>
+
+        <label for="elfo"><strong>Elfo:</strong></label>
+        <input type="radio" name="raza" value="elfo" id="elfo"/>
+
+        <label for="enano"><strong>Enano:</strong></label>
+        <input type="radio" name="raza" value="enano" id="enano"/>
+
+        <br/><br/>
+
+        <input type="button" id="btnSubmit" value="Generar Historias"/>
+
+        <p id="texto" style="width: 40%; background-color: coral; color: black; font-size: 20px; font-weight: bold;"></p>
+
+        <script src="./script/script.js"></script>   
+    </body>
+</html>
