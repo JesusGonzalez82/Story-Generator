@@ -25,6 +25,7 @@ function crearHistoriaMontaraz(){
     }
 
     let historiaMontaraz = [
+        "<h1>" + nombre + ", El Guardián de Ithilien: La Sombra que Protege Gondor</h1>",
         "En los espesos bosques de Ithilien, " + nombre + ", un montaraz al servicio de Gondor,",
         "vigilaba las fronteras del sur. Su capa verde oscuro se mimetizaba con los árboles, y su",
         "mirada afilada escudriñaba cada sombra. Hijo de un linaje olvidado, su deber era proteger",
@@ -33,7 +34,7 @@ function crearHistoriaMontaraz(){
         "un sonido inquietante: un murmullo grave acompañado de pasos pesados. Escalando rápidamente un árbol",
         "vio un grupo de Orcos avanzando con una máquina de guerra. Sus ojos se entrecerraron; no podía permitir",
         "que cruzaran el río hacia Gondor.",
-        "Deslizandose como un fantasma" + nombre + " preparó su arco y disparó una flecha certera que silbó en la",
+        "Deslizandose como un fantasma " + nombre + " preparó su arco y disparó una flecha certera que silbó en la",
         "oscuridad, derribando al líder del enemigo. Antes de que los orcos pudieran reaccionar, lanzó una segunda flecha",
         "alcanzando la antorcha que portaban, y sumió al enemigo en el caos. Sin embargo, uno de los orcos, descubrió",
         "su escondite.",
@@ -58,6 +59,7 @@ function crearHistoriaHobbit(){
     }
 
 let historiaHobbit = [
+    "<h1>Venturas y desventuras de " + nombre + " el hobbit! </h1>",
     "En la tranquila Comarca, " + nombre + " un joven hobbit lleno de curiosidad,",
     "decidió que ya no podía seguir viviendo una vida monótona. Aunque su gente prefería la paz y la seguridad de su hogar,",
     "algo dentro de él le decía que había algo más allá de los campos verdes. Un día, un mago llamado Gandalf apareció en su puerta",
@@ -85,6 +87,7 @@ function crearHistoriaElfo(){
     }
 
 let historiaElfo = [
+        "<h1>" + nombre + " El guardian de Lórien",
         "En el reino oculto de Lórien, " + nombre + " un noble elfo de la casa de Galendil,",
         "era conocido por su destreza con el arco y su profunda conexión con la naturaleza.",
         "Su cabello dorado brillaba bajo la luz de la luna, y sus ojos azules reflejaban siglos de sabiduría.",
@@ -111,6 +114,7 @@ function crearHistoriaEnano(){
     }
 
     let historiaEnano = [
+        "<h1>" + nombre + " El Martillo de Tharûm Khazad",
         "En las minas de Tharûm Khazad, " + nombre + " un enano de imponente barba rojiza,",
         "forjaba armas imbuidas con runas ancestrales. Era hijo de Tharin, el herrero más famoso de Erebor.",
         "Su habilidad con el martillo era legendaria, pero su corazón anhelaba más que las profundidades de la roca.",
