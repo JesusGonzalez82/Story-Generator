@@ -87,7 +87,7 @@ function crearHistoriaElfo(){
     }
 
 let historiaElfo = [
-        "<h1>" + nombre + " El guardian de Lórien",
+        "<h1>" + nombre + " El guardián de Lórien </h1>",
         "En el reino oculto de Lórien, " + nombre + " un noble elfo de la casa de Galendil,",
         "era conocido por su destreza con el arco y su profunda conexión con la naturaleza.",
         "Su cabello dorado brillaba bajo la luz de la luna, y sus ojos azules reflejaban siglos de sabiduría.",
@@ -114,7 +114,7 @@ function crearHistoriaEnano(){
     }
 
     let historiaEnano = [
-        "<h1>" + nombre + " El Martillo de Tharûm Khazad",
+        "<h1>" + nombre + " El Martillo de Tharûm Khazad </h1>",
         "En las minas de Tharûm Khazad, " + nombre + " un enano de imponente barba rojiza,",
         "forjaba armas imbuidas con runas ancestrales. Era hijo de Tharin, el herrero más famoso de Erebor.",
         "Su habilidad con el martillo era legendaria, pero su corazón anhelaba más que las profundidades de la roca.",
