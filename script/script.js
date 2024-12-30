@@ -2,22 +2,48 @@ let texto = document.getElementById('texto');
 let button = document.getElementById('btnSubmit');
 
 button.addEventListener("click", () => {
+    let sexo = getSexoSeleccionado(); // Con esto obtenemos el sexo elegido
+    if (!sexo){
+        texto.innerHTML = "Por favor, seleciona el sexo de nuestro personaje"
+        return;
+    }
+
     if (document.getElementById('montaraz').checked) {
-        crearHistoriaMontaraz();
+        crearHistoriaMontaraz(sexo);
     } else if (document.getElementById('hobbit').checked) {
-        crearHistoriaHobbit();
+        crearHistoriaHobbit(sexo);
     } else if (document.getElementById('elfo').checked) {
-        crearHistoriaElfo();
+        crearHistoriaElfo(sexo);
     } else if (document.getElementById('enano').checked) {
-        crearHistoriaEnano();
+        crearHistoriaEnano(sexo);
     } else {
-        console.log("Selecciona una opción válida.");
+        texto.innerHTML = "Selecciona una opción válida.";
     }
 }, false);
 
-function crearHistoriaMontaraz(){
+function getSexoSeleccionado(){
+    const radios = document.getElementsByName('sexo');
+    for (let radio of radios){
+        if (radio.checked){
+            return radio.value;
+        }
+    }
+    return null; // No se seleccionó ningún sexo
+}
+
+function crearHistoriaMontaraz(sexo){
+    if (sexo === 'masculino'){
+        crearHistoriaMontarazM();
+    }else if (sexo === 'femenino') {
+        crearHistoriaMontarazF();
+    }else {
+        crearHistoriaMontarazO();
+    }
+}
+
+function crearHistoriaMontarazM(sexo){
     texto.innerHTML = "";
-    let nombre = document.getElementById('nombre').value.toString();
+    let nombre = document.getElementById('nombre').value.trim();
 
     if (!nombre){
         texto.innerHTML = "Por favor, ingresa un nombre para nuestro héroe";
@@ -46,6 +72,72 @@ function crearHistoriaMontaraz(){
     ];
 
     
+    texto.innerHTML = historiaMontaraz.join(" ");
+}
+
+function crearHistoriaMontarazF(sexo){
+    texto.innerHTML = "";
+    let nombre = document.getElementById('nombre').value.toString();
+
+    if (!nombre){
+        texto.innerHTML = "Por favor, ingresa un nombre para nuestra heroina";
+        return;
+    }
+
+    let historiaMontaraz = [
+        "<h1>" + nombre + ", La Guardiana de Ithilien: La Sombra que Protege Gondor</h1>",
+        "En los espesos bosques de Ithilien, " + nombre + ", una montaraz al servicio de Gondor,",
+        "vigilaba las fronteras del sur. Su capa verde oscuro se mimetizaba con los árboles, y su",
+        "mirada afilada escudriñaba cada sombra. Hija de un linaje olvidado, su deber era proteger",
+        "las tierras libres de las amenazas del este.",
+        "Una noche, mientras patrullaba cerca de los ríos que desembocan en el Anduin, " + nombre + " escuchó",
+        "un sonido inquietante: un murmullo grave acompañado de pasos pesados. Escalando rápidamente un árbol",
+        "vio un grupo de Orcos avanzando con una máquina de guerra. Sus ojos se entrecerraron; no podía permitir",
+        "que cruzaran el río hacia Gondor.",
+        "Deslizándose como un fantasma, " + nombre + " preparó su arco y disparó una flecha certera que silbó en la",
+        "oscuridad, derribando a la líder del enemigo. Antes de que los orcos pudieran reaccionar, lanzó una segunda flecha",
+        "alcanzando la antorcha que portaban, y sumió al enemigo en el caos. Sin embargo, uno de los orcos descubrió",
+        "su escondite.",
+        "Con su espada, " + nombre + " se enfrentó al enemigo en un duelo feroz. Aunque estaba sola, su entrenamiento",
+        "como montaraz le permitió usar el terreno a su favor. Con astucia, derribó al último orco y destruyó la máquina.",
+        "Antes del amanecer, " + nombre + " regresó al Abismo de Helm, donde sus compañeros la esperaban.",
+        "Aunque exhausta, no mencionó sus hazañas. Para " + nombre + " la gloria no era el objetivo, sino ",
+        "la protección de la tierra que amaba."
+    ];
+
+    texto.innerHTML = historiaMontaraz.join(" ");
+}
+
+function crearHistoriaMontarazO(sexo){
+    texto.innerHTML = "";
+    let nombre = document.getElementById('nombre').value.toString();
+
+    if (!nombre){
+        texto.innerHTML = "Por favor, ingresa un nombre para nuestra heroina";
+        return;
+    }
+
+    let historiaMontaraz = [
+        "<h1>" + nombre + ", Le Guardián de Ithilien: La Sombra que Protege Gondor</h1>",
+        "En los espesos bosques de Ithilien, " + nombre + ", une montaraz al servicio de Gondor,",
+        "vigilaba las fronteras del sur. Su capa verde oscuro se mimetizaba con los árboles, y su",
+        "mirada afilada escudriñaba cada sombra. Hije de un linaje olvidado, su deber era proteger",
+        "las tierras libres de las amenazas del este.",
+        "Una noche, mientras patrullaba cerca de los ríos que desembocan en el Anduin, " + nombre + " escuchó",
+        "un sonido inquietante: un murmullo grave acompañado de pasos pesados. Escalando rápidamente un árbol",
+        "vio un grupo de Orcos avanzando con una máquina de guerra. Sus ojos se entrecerraron; no podía permitir",
+        "que cruzaran el río hacia Gondor.",
+        "Deslizándose como un fantasma, " + nombre + " preparó su arco y disparó una flecha certera que silbó en la",
+        "oscuridad, derribando a la líder del enemigo. Antes de que los orcos pudieran reaccionar, lanzó una segunda flecha",
+        "alcanzando la antorcha que portaban, y sumió al enemigo en el caos. Sin embargo, une de les orcos descubrió",
+        "su escondite.",
+        "Con su espada, " + nombre + " se enfrentó al enemigo en un duelo feroz. Aunque estaba sole, su entrenamiento",
+        "como montaraz le permitió usar el terreno a su favor. Con astucia, derribó al últime orco y destruyó la máquina.",
+        "Antes del amanecer, " + nombre + " regresó al Abismo de Helm, donde sus compañeres le esperaban.",
+        "Aunque exhauste, no mencionó sus hazañas. Para " + nombre + " la gloria no era el objetivo, sino ",
+        "la protección de la tierra que amaba."
+    ];
+
     texto.innerHTML = historiaMontaraz.join(" ");
 }
 
