@@ -49,9 +49,14 @@ function crearHistoriaMontarazM(sexo){
         texto.innerHTML = "Por favor, ingresa un nombre para nuestro héroe";
         return;
     }
+    let montaraz = `
+        
+        <img src="./src/montarazF.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        
+    `;
 
     let historiaMontaraz = [
-        "<h1>" + nombre + ", El Guardián de Ithilien: La Sombra que Protege Gondor</h1>",
+        "<h1>"+montaraz + nombre + ", El Guardián de Ithilien: La Sombra que Protege Gondor</h1>",
         "En los espesos bosques de Ithilien, " + nombre + ", un montaraz al servicio de Gondor,",
         "vigilaba las fronteras del sur. Su capa verde oscuro se mimetizaba con los árboles, y su",
         "mirada afilada escudriñaba cada sombra. Hijo de un linaje olvidado, su deber era proteger",
@@ -84,8 +89,14 @@ function crearHistoriaMontarazF(sexo){
         return;
     }
 
+    let montaraz = `
+        
+        <img src="./src/montarazF.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        
+    `;
+
     let historiaMontaraz = [
-        "<h1>" + nombre + ", La Guardiana de Ithilien: La Sombra que Protege Gondor</h1>",
+        "<h1>"+ montaraz + nombre + ", La Guardiana de Ithilien: La Sombra que Protege Gondor</h1>",
         "En los espesos bosques de Ithilien, " + nombre + ", una montaraz al servicio de Gondor,",
         "vigilaba las fronteras del sur. Su capa verde oscuro se mimetizaba con los árboles, y su",
         "mirada afilada escudriñaba cada sombra. Hija de un linaje olvidado, su deber era proteger",
@@ -117,8 +128,14 @@ function crearHistoriaMontarazO(sexo){
         return;
     }
 
+    let montaraz = `
+        
+        <img src="./src/montarazF.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        
+    `;
+
     let historiaMontaraz = [
-        "<h1>" + nombre + ", Le Guardián de Ithilien: La Sombra que Protege Gondor</h1>",
+        "<h1>" + montaraz + nombre + ", Le Guardián de Ithilien: La Sombra que Protege Gondor</h1>",
         "En los espesos bosques de Ithilien, " + nombre + ", une montaraz al servicio de Gondor,",
         "vigilaba las fronteras del sur. Su capa verde oscuro se mimetizaba con los árboles, y su",
         "mirada afilada escudriñaba cada sombra. Hije de un linaje olvidado, su deber era proteger",
@@ -160,8 +177,14 @@ function crearHistoriaHobbitM(){
         return;
     }
 
+    let hobbit = `
+        
+        <img src="./src/hobbit.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        
+    `;
+
 let historiaHobbit = [
-    "<h1>Venturas y desventuras de " + nombre + " el hobbit! </h1>",
+    "<h1>" + hobbit + "Venturas y desventuras de " + nombre + " el hobbit! </h1>",
     "En la tranquila Comarca, " + nombre + " un joven hobbit lleno de curiosidad,",
     "decidió que ya no podía seguir viviendo una vida monótona. Aunque su gente prefería la paz y la seguridad de su hogar,",
     "algo dentro de él le decía que había algo más allá de los campos verdes. Un día, un mago llamado Gandalf apareció en su puerta",
@@ -188,8 +211,14 @@ function crearHistoriaHobbitF(){
         return;
     }
 
+    let hobbit = `
+        
+        <img src="./src/hobbit.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        
+    `;
+
     let historiaHobbit = [
-        "<h1>Venturas y desventuras de " + nombre + " la hobbit!</h1>",
+        "<h1>" + hobbit + "Venturas y desventuras de " + nombre + " la hobbit!</h1>",
         "En la tranquila Comarca, " + nombre + ", una joven hobbit llena de curiosidad,",
         "decidió que ya no podía seguir viviendo una vida monótona. Aunque su gente prefería la paz y la seguridad de su hogar,",
         "algo dentro de ella le decía que había algo más allá de los campos verdes. Un día, un mago llamado Gandalf apareció en su puerta",
@@ -216,9 +245,15 @@ function crearHistoriaHobbitO(){
         return;
     }
 
+    let hobbit = `
+        
+        <img src="./src/hobbit.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        
+    `;
+
 
     let historiaHobbit = [
-        "<h1>Venturas y desventuras de " + nombre + " le hobbit!</h1>",
+        "<h1>" + hobbit + "Venturas y desventuras de " + nombre + " le hobbit!</h1>",
         "En la tranquila Comarca, " + nombre + ", une joven hobbit llene de curiosidad,",
         "decidió que ya no podía seguir viviendo una vida monótona. Aunque su gente prefería la paz y la seguridad de su hogar,",
         "algo dentro de elle le decía que había algo más allá de los campos verdes. Un día, un mago llamado Gandalf apareció en su puerta",
@@ -254,9 +289,14 @@ function crearHistoriaElfoM(){
         texto.innerHTML = "Por favor, ingresa un nombre para nuestro héroe";
         return;
     }
+    let elfo = `
+        
+        <img src="./src/elfo.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        
+    `;
 
 let historiaElfo = [
-        "<h1>" + nombre + " El guardián de Lórien </h1>",
+        "<h1>" + elfo + nombre + " El guardián de Lórien </h1>",
         "En el reino oculto de Lórien, " + nombre + " un noble elfo de la casa de Galendil,",
         "era conocido por su destreza con el arco y su profunda conexión con la naturaleza.",
         "Su cabello dorado brillaba bajo la luz de la luna, y sus ojos azules reflejaban siglos de sabiduría.",
@@ -283,8 +323,14 @@ function crearHistoriaElfoF(){
         return;
     }
 
+    let elfa = `
+        
+        <img src="./src/elfa.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        
+    `;
+
     let historiaElfo = [
-        "<h1>" + nombre + " La guardiana de Lórien </h1>",
+        "<h1>" + elfa + nombre + " La guardiana de Lórien </h1>",
         "En el reino oculto de Lórien, " + nombre + ", una noble elfa de la casa de Galendil,",
         "era conocida por su destreza con el arco y su profunda conexión con la naturaleza.",
         "Su cabello dorado brillaba bajo la luz de la luna, y sus ojos azules reflejaban siglos de sabiduría.",
@@ -310,9 +356,14 @@ function crearHistoriaElfoO(){
         texto.innerHTML = "Por favor, ingresa un nombre para nuestro héroe";
         return;
     }
+    let elfe = `
+        
+        <img src="./src/elfe.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        
+    `;
 
     let historiaElfo = [
-        "<h1>" + nombre + " Le guardián de Lórien </h1>",
+        "<h1>" + elfe + nombre + " Le guardián de Lórien </h1>",
         "En el reino oculto de Lórien, " + nombre + ", une noble elfe de la casa de Galendil,",
         "era conocide por su destreza con el arco y su profunda conexión con la naturaleza.",
         "Su cabello dorado brillaba bajo la luz de la luna, y sus ojos azules reflejaban siglos de sabiduría.",
@@ -348,8 +399,14 @@ function crearHistoriaEnanoM(){
         return;
     }
 
+    let iconoEnano = `
+        
+    <img src="./src/enano.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+    
+`;
+
     let historiaEnano = [
-        "<h1>" + nombre + " El Martillo de Tharûm Khazad </h1>",
+        "<h1>" + iconoEnano + nombre + " El Martillo de Tharûm Khazad </h1>",
         "En las minas de Tharûm Khazad, " + nombre + " un enano de imponente barba rojiza,",
         "forjaba armas imbuidas con runas ancestrales. Era hijo de Tharin, el herrero más famoso de Erebor.",
         "Su habilidad con el martillo era legendaria, pero su corazón anhelaba más que las profundidades de la roca.",
@@ -375,8 +432,14 @@ function crearHistoriaEnanoF(){
         return;
     }
 
+    let iconoEnanoO = `
+        
+    <img src="./src/enano.png" aalt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+    
+`;
+
     let historiaEnano = [
-        "<h1>" + nombre + " La Martillo de Tharûm Khazad </h1>",
+        "<h1>" + iconoEnanoO +  nombre + " La Martillo de Tharûm Khazad </h1>",
         "En las minas de Tharûm Khazad, " + nombre + ", una enana de imponente barba rojiza,",
         "forjaba armas imbuidas con runas ancestrales. Era hija de Tharin, el herrero más famoso de Erebor.",
         "Su habilidad con el martillo era legendaria, pero su corazón anhelaba más que las profundidades de la roca.",
@@ -402,9 +465,13 @@ function crearHistoriaEnanoO(){
         texto.innerHTML = "Por favor, introduce un nombre para nuestre héroe";
         return;
     }
-
+    let iconoEnanoO = `
+        
+        <img src="./src/enano.png" alt="Icono" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+        
+    `;
     let historiaEnano = [
-        "<h1>" + nombre + " Le Martillo de Tharûm Khazad </h1>",
+        "<h1>" + iconoEnanoO + nombre + " Le Martillo de Tharûm Khazad </h1>",
         "En las minas de Tharûm Khazad, " + nombre + ", une enane de imponente barba rojiza,",
         "forjaba armas imbuidas con runas ancestrales. Era hije de Tharin, el herrero más famoso de Erebor.",
         "Su habilidad con el martillo era legendaria, pero su corazón anhelaba más que las profundidades de la roca.",
